@@ -20,7 +20,6 @@ class List extends Component {
     }
 
     componentDidMount = async() => {
-        console.log(this.savedTasks);
         if (this.savedTasks) {
             this.setState({
                 isList: true, 
@@ -29,7 +28,6 @@ class List extends Component {
                 tasks: this.savedTasks            
             })
         }
-        else console.log("empty tasks");
     }
 
     //if there is a list and a task, save them in local memory

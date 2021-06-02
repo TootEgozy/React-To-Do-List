@@ -21,8 +21,10 @@ class Task extends Component {
  }
 
  cancelEdit = async () => {
-     console.log("edit canceled");
-     this.setState({isEditMode: false});
+     this.setState({
+         isEditMode: false,
+         titleDisplay: this.state.title
+        });
  }
 
  openEditMode = () => {
